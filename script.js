@@ -1,4 +1,18 @@
 const buttons = document.querySelectorAll(".buy-btn");
+const menuBtn = document.querySelector(".menu-btn");
+const nav = document.querySelector(".nav");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  nav.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuBtn.classList.remove("active");
+    nav.classList.remove("active");
+  });
+});
 
 const modal = document.createElement("div");
 
@@ -11,8 +25,7 @@ modal.innerHTML = `
 
     <p>
       Сейчас сайт находится на этапе подготовки. Следующий шаг —
-      публикация через Cloudflare Pages, после чего будет подключена
-      платежная система и лицензии.
+      подключение платежной системы, лицензий и автоматической выдачи доступа.
     </p>
 
     <div class="modal-actions">
