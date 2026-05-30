@@ -52,6 +52,7 @@ body {
   color: #ffffff;
   font-weight: 800;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .logo img {
@@ -106,9 +107,9 @@ body {
 
 .hero h1 {
   max-width: 860px;
-  font-size: clamp(54px, 10vw, 118px);
-  line-height: 0.9;
-  letter-spacing: -4px;
+  font-size: clamp(44px, 8vw, 92px);
+  line-height: 0.92;
+  letter-spacing: -3px;
   text-transform: uppercase;
   text-shadow: 0 0 40px rgba(65, 255, 136, 0.25);
   margin-bottom: 26px;
@@ -196,7 +197,8 @@ body {
   margin-bottom: 38px;
 }
 
-.section-title span {
+.section-title span,
+.support-box span {
   display: block;
   color: #41ff88;
   font-weight: 800;
@@ -207,14 +209,16 @@ body {
 }
 
 .section-title h2,
-.risk h2 {
+.risk h2,
+.support-box h2 {
   font-size: clamp(34px, 5vw, 58px);
   line-height: 1.05;
   margin-bottom: 16px;
 }
 
 .section-title p,
-.risk p {
+.risk p,
+.support-box p {
   color: rgba(255, 255, 255, 0.72);
   font-size: 17px;
   line-height: 1.75;
@@ -234,7 +238,8 @@ body {
 .card,
 .plan-card,
 .step-card,
-.faq-item {
+.faq-item,
+.support-box {
   background: rgba(0, 0, 0, 0.58);
   border: 1px solid rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(14px);
@@ -386,6 +391,28 @@ body {
   font-size: 20px;
 }
 
+.support-box {
+  max-width: 980px;
+  padding: 34px;
+  border-color: rgba(65, 255, 136, 0.26);
+}
+
+.support-box a {
+  display: inline-flex;
+  margin-top: 22px;
+  min-height: 56px;
+  padding: 0 26px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #41ff88, #00c96f);
+  color: #001507;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 0 35px rgba(65, 255, 136, 0.26);
+}
+
 .risk {
   max-width: 1000px;
 }
@@ -394,87 +421,6 @@ body {
   padding: 36px 60px 48px;
   text-align: center;
   color: rgba(255, 255, 255, 0.52);
-}
-
-@media (max-width: 950px) {
-  .header {
-    padding: 18px 22px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .hero {
-    min-height: auto;
-    padding: 80px 22px 60px;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .hero h1 {
-    letter-spacing: -2px;
-  }
-
-  .hero p {
-    font-size: 17px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .section {
-    padding: 64px 22px;
-  }
-
-  .stats,
-  .cards,
-  .pricing-grid,
-  .steps-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stat-card {
-    text-align: center;
-  }
-}
-
-@media (max-width: 520px) {
-  .logo span {
-    font-size: 14px;
-  }
-
-  .logo img {
-    width: 42px;
-    height: 42px;
-  }
-
-  .hero {
-    padding-top: 58px;
-  }
-
-  .hero h1 {
-    font-size: 56px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .plan-card,
-  .card,
-  .step-card,
-  .faq-item,
-  .stat-card {
-    padding: 22px;
-  }
 }
 
 .modal {
@@ -539,15 +485,6 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 950px) {
-
-  body {
-    background-position: center top;
-    background-size: contain;
-  }
-
-}
-
 .menu-btn {
   display: none;
   width: 44px;
@@ -583,6 +520,15 @@ body {
 }
 
 @media (max-width: 950px) {
+  body {
+    background-position: center top;
+    background-size: contain;
+  }
+
+  .header {
+    padding: 18px 22px;
+  }
+
   .menu-btn {
     display: flex;
   }
@@ -611,5 +557,80 @@ body {
     padding: 14px 16px;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.04);
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 80px 22px 60px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+    line-height: 0.95;
+    letter-spacing: -2px;
+  }
+
+  .hero p {
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .section {
+    padding: 64px 22px;
+  }
+
+  .stats,
+  .cards,
+  .pricing-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo span {
+    font-size: 13px;
+  }
+
+  .logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hero {
+    padding-top: 58px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn,
+  .support-box a {
+    width: 100%;
+  }
+
+  .plan-card,
+  .card,
+  .step-card,
+  .faq-item,
+  .stat-card,
+  .support-box {
+    padding: 22px;
   }
 }
