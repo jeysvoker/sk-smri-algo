@@ -107,10 +107,11 @@ body {
 
 .hero h1 {
   max-width: 860px;
-  font-size: clamp(44px, 8vw, 92px);
+  font-size: clamp(40px, 6.5vw, 76px);
   line-height: 0.92;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   text-transform: uppercase;
+  white-space: nowrap;
   text-shadow: 0 0 40px rgba(65, 255, 136, 0.25);
   margin-bottom: 26px;
 }
@@ -567,9 +568,9 @@ body {
   }
 
   .hero h1 {
-    font-size: 52px;
+    font-size: 38px;
     line-height: 0.95;
-    letter-spacing: -2px;
+    letter-spacing: -1.5px;
   }
 
   .hero p {
@@ -613,7 +614,7 @@ body {
   }
 
   .hero h1 {
-    font-size: 44px;
+    font-size: 34px;
   }
 
   .hero p {
