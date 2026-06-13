@@ -429,9 +429,10 @@ body {
   inset: 0;
   z-index: 100;
   display: none;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 22px;
+  padding: 16px;
+  overflow-y: auto;
   background: rgba(0, 0, 0, 0.76);
   backdrop-filter: blur(10px);
 }
@@ -443,6 +444,7 @@ body {
 .modal-box {
   width: min(520px, 100%);
   position: relative;
+  margin: auto;
   padding: 34px;
   border-radius: 28px;
   background: rgba(0, 0, 0, 0.86);
@@ -680,6 +682,13 @@ body {
   margin-top: 16px;
   font-size: 14px;
   opacity: 0.7;
+}
+
+.form-note a {
+  color: #41ff88;
+  text-decoration: underline;
+  opacity: 1;
+  font-weight: 600;
 }
 
 .support-link {
