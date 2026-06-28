@@ -703,3 +703,25 @@ body {
   font-weight: 900;
   text-decoration: none;
 }
+/* --- Multi-page navigation additions --- */
+.nav a.current {
+  color: #41ff88;
+}
+
+.steps-cta {
+  margin-top: 40px;
+}
+
+/* Footer sticks to the bottom on short pages (Тарифы / FAQ) */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
