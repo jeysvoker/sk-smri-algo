@@ -525,7 +525,7 @@ body {
 @media (max-width: 950px) {
   body {
     background-position: center top;
-    background-size: contain;
+    background-size: cover;
   }
 
   .header {
@@ -724,4 +724,42 @@ main {
 
 .footer {
   flex-shrink: 0;
+}
+
+/* --- About page long text --- */
+.about-text {
+  max-width: 820px;
+}
+
+.about-text p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Referral link inside modal --- */
+.ref-link {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 48px;
+  padding: 12px 16px;
+  margin-bottom: 6px;
+  border-radius: 14px;
+  border: 1px solid rgba(65, 255, 136, 0.5);
+  background: rgba(65, 255, 136, 0.10);
+  color: #41ff88;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ref-link:hover {
+  background: rgba(65, 255, 136, 0.18);
 }

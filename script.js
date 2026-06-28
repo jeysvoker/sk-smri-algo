@@ -131,7 +131,7 @@ function licenseSuccessModal(title, data, extraNote) {
 
     <p class="form-note">
       Файл бота .algo и подробную инструкцию пришлет менеджер:
-      <a href="https://t.me/manager_sksamurai" target="_blank" rel="noopener">@manager_sksamurai</a>
+      <a href="https://t.me/manager_sk_ua" target="_blank" rel="noopener">@manager_sk_ua</a>
     </p>
   `);
 
@@ -274,6 +274,10 @@ function referralForm() {
       и отправьте заявку на проверку.
     </p>
 
+    <a class="ref-link" href="https://fxpro-direct.com/ru/partner/11310160?platform=web" target="_blank" rel="noopener">
+      Зарегистрироваться в FxPro по реферальной ссылке →
+    </a>
+
     <input class="form-input" id="refEmail" placeholder="Email" />
     <input class="form-input" id="refTelegram" placeholder="Telegram username *" />
     <input class="form-input" id="refFxpro" placeholder="FxPro ID / Email аккаунта *" />
@@ -335,10 +339,10 @@ async function sendReferralRequest() {
 
       <p>
         Ваша заявка на Referral Access сохранена.
-        Менеджер проверит подключение и свяжется с вами.
+        Напишите менеджеру, чтобы он проверил подключение и активировал доступ.
       </p>
 
-      <a class="support-link" href="https://t.me/manager_sksamurai" target="_blank">
+      <a class="support-link" href="https://t.me/manager_sk_ua" target="_blank">
         Написать менеджеру
       </a>
     `);
