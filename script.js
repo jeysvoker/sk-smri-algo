@@ -48,7 +48,7 @@ function ownBrokerForm() {
     <h2>Own Broker / Prop firm</h2>
 
     <p>
-      Стоимость подключения: <strong>250 USDT TRC20</strong> (первый месяц включен)<br>
+      Стоимость подключения: <strong>200 USDT TRC20</strong> (первый месяц включен)<br>
       Далее продление: <strong>30 USDT / месяц</strong>
     </p>
 
@@ -270,7 +270,7 @@ function referralForm() {
     <h2>Referral Access</h2>
 
     <p>
-      Зарегистрируйтесь в FxPro по реферальной ссылке, пополните баланс от $500
+      Зарегистрируйтесь в FxPro по реферальной ссылке, пополните баланс от $400
       и отправьте заявку на проверку.
     </p>
 
