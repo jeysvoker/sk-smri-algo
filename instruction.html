@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Инструкция — SK SAMURAI ALGO</title>
+  <meta name="description" content="Как подключить и запустить бота SK SAMURAI ALGO в cTrader." />
+  <meta name="theme-color" content="#020403" />
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-overlay"></div>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="./assets/cbot-ava.jpg" alt="SK SAMURAI ALGO" />
+      <span>SK SAMURAI ALGO</span>
+    </a>
+
+    <button class="menu-btn" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="plans.html">Тарифы</a>
+      <a href="about.html">О боте</a>
+      <a href="faq.html">FAQ</a>
+      <a href="https://t.me/manager_sk_ua" target="_blank" rel="noopener">Поддержка</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-top">
+      <div class="section-title">
+        <span>Instruction</span>
+        <h2>Инструкция по подключению</h2>
+        <p>Подключение занимает 2–3 минуты. Просто следуйте шагам ниже.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Что понадобится</h3>
+          <p>Установленный cTrader, файл бота SK SAMURAI ALGO (.algo) и ваш лицензионный ключ (License Key).</p>
+        </div>
+        <div class="card">
+          <h3>Где взять ключ</h3>
+          <p>Ключ выдаётся после оплаты тарифа или подтверждения реферального доступа. Если ключа нет — напишите менеджеру.</p>
+        </div>
+        <div class="card">
+          <h3>Сколько счетов</h3>
+          <p>Own Broker / Prop Firm — до 2 счетов, Referral — 1 счёт. Запускайте бота на том счёте, для которого выдан ключ.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Подключение по шагам</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Шаг 1 — Скачайте файл бота</h3>
+          <p>Сохраните файл <b>SK SAMURAI ALGO.algo</b> на компьютер (кнопка после оплаты или ссылка от менеджера).</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Шаг 2 — Откройте раздел Algo в cTrader</h3>
+          <p>Запустите cTrader и в левом меню выберите раздел <b>Algo</b> (в некоторых версиях он называется «Automate»).</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Шаг 3 — Установите бота</h3>
+          <p>Дважды кликните по скачанному файлу .algo (или перетащите его в окно cTrader). Бот появится в списке <b>cBots</b> под названием SK SAMURAI ALGO.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Шаг 4 — Добавьте инстанс</h3>
+          <p>Найдите SK SAMURAI ALGO в списке и нажмите <b>+ Add instance</b>. Выберите торговый счёт — тот, который вы указали при покупке. Символ и таймфрейм можно оставить любые (например EURUSD, H1): на торговлю они не влияют, бот сам работает по своим парам.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Шаг 5 — Вставьте лицензионный ключ</h3>
+          <p>В панели параметров справа найдите поле <b>License Key</b> и вставьте ваш ключ <b>полностью</b> — вместе с длинной частью после точек.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Шаг 6 — Запустите бота</h3>
+          <p>Нажмите зелёную кнопку <b>Play</b>. В журнале (Log / Instance information) должна появиться строка <b>«LICENSE ACTIVE»</b> — значит всё работает и бот начал торговать.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Круглосуточная работа (облако)</h2>
+        <p>Чтобы бот торговал 24/7 без включённого компьютера, запустите инстанс в облаке cTrader.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Как включить облако</h3>
+          <p>Рядом с инстансом нажмите значок <b>облака</b> — бот продолжит работать на серверах cTrader, даже когда ваш ПК выключен.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Важно про счёт</h3>
+          <p>В облаке лицензия проверяется по номеру счёта. Запускайте бота строго на том счёте, для которого оформлен ключ, иначе в облаке он не активируется.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Как пользоваться</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Бот работает сам</h3>
+          <p>SK SAMURAI ALGO полностью автоматический: сам открывает и закрывает сделки по 22 валютным парам. Ваше участие не требуется.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Ничего не нужно настраивать</h3>
+          <p>Лоты, стоп-лоссы, тейк-профиты и фильтр новостей уже настроены. Менять параметры не нужно — кроме поля License Key.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Запуск и остановка</h3>
+          <p>Бот работает круглосуточно. Остановить его можно в любой момент кнопкой <b>Stop</b>. Не запускайте несколько копий бота на одном счёте одновременно.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Продление лицензии</h2>
+        <p>Касается тарифа Own Broker / Prop Firm. Для Referral-доступа продление не требуется.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Когда продлевать</h3>
+          <p>Подписка действует 30 дней. Ближе к концу срока продлите её на сайте: <b>Тарифы → «Уже есть лицензия? Продлить за 30 USDT»</b>.</p>
+        </div>
+        <div class="faq-item">
+          <h3>После оплаты</h3>
+          <p>Вы получите обновлённый ключ. Вставьте его в поле <b>License Key</b> вместо старого и перезапустите бота.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Если что-то не так</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>«LICENSE INVALID OR EXPIRED» / «Account not licensed»</h3>
+          <p>Бот запущен не на том счёте, для которого выдан ключ, либо истёк срок лицензии. Проверьте номер счёта и срок действия. Если всё верно — напишите менеджеру.</p>
+        </div>
+        <div class="faq-item">
+          <h3>«License Key is empty»</h3>
+          <p>Ключ не вставлен в параметры. Откройте параметры инстанса и вставьте License Key в соответствующее поле.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Какая-то пара не торгуется</h3>
+          <p>У вашего брокера нет этого инструмента — бот просто пропускает его и работает по остальным парам. Это нормально.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Остались вопросы?</h2>
+        <p>Напишите менеджеру — поможем с подключением и запуском.</p>
+      </div>
+      <div class="steps-cta">
+        <a href="https://t.me/manager_sk_ua" target="_blank" rel="noopener" class="btn btn-primary">Написать менеджеру</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 SK SAMURAI ALGO. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
