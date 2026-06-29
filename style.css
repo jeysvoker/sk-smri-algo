@@ -797,3 +797,18 @@ main {
 .ref-link:hover {
   background: rgba(65, 255, 136, 0.18);
 }
+
+/* --- Renew link under the plan button --- */
+.renew-link {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  color: #41ff88;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.renew-link:hover {
+  text-decoration: underline;
+}

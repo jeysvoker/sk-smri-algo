@@ -71,18 +71,9 @@ function ownBrokerForm() {
       Лицензия работает максимум на 2 торговых счетах.
       Номер счета указан в cTrader рядом с названием брокера.
     </p>
-
-    <p class="form-note">
-      <a href="#" id="renewLink">Уже есть лицензия? Продлить за 30 USDT</a>
-    </p>
   `);
 
   document.querySelector("#verifyPaymentBtn").addEventListener("click", verifyOwnBrokerPayment);
-
-  document.querySelector("#renewLink").addEventListener("click", (event) => {
-    event.preventDefault();
-    renewalForm();
-  });
 }
 
 function formatExpires(value) {
@@ -363,3 +354,11 @@ buttons.forEach((button, index) => {
     }
   });
 });
+
+const ownRenewLink = document.querySelector("#ownRenewLink");
+if (ownRenewLink) {
+  ownRenewLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    renewalForm();
+  });
+}
