@@ -593,7 +593,7 @@ body::before {
 
   .hero {
     min-height: auto;
-    padding: 70px 22px 30px;
+    padding: 70px 22px 4px;
     text-align: center;
     justify-content: center;
   }
