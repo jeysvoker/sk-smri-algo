@@ -593,7 +593,7 @@ body::before {
 
   .hero {
     min-height: auto;
-    padding: 80px 22px 60px;
+    padding: 70px 22px 30px;
     text-align: center;
     justify-content: center;
   }
@@ -615,7 +615,11 @@ body::before {
   }
 
   .section {
-    padding: 64px 22px;
+    padding: 40px 22px;
+  }
+
+  .section-title {
+    margin-bottom: 22px;
   }
 
   .stats,
