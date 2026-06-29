@@ -442,6 +442,7 @@ body::before {
   padding: 36px 60px 48px;
   text-align: center;
   color: rgba(255, 255, 255, 0.52);
+  font-size: 13px;
 }
 
 .modal {
