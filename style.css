@@ -285,6 +285,10 @@ body::before {
   line-height: 1.65;
 }
 
+.faq-item p + p {
+  margin-top: 14px;
+}
+
 .pricing-grid {
   grid-template-columns: repeat(2, 1fr);
 }
