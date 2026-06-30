@@ -90,7 +90,7 @@ function formatExpires(value) {
   });
 }
 
-function licenseSuccessModal(title, data, extraNote) {
+function licenseSuccessModal(title, data, extraNote, showResources) {
   openModal(`
     <h2>${title}</h2>
 
@@ -110,20 +110,20 @@ function licenseSuccessModal(title, data, extraNote) {
       Скопировать ключ
     </button>
 
-    <p>
-      <strong>Как подключить:</strong><br>
-      1. Откройте cTrader<br>
-      2. Перейдите в раздел Algo и добавьте cBot SK SAMURAI ALGO<br>
-      3. Вставьте License Key в параметры бота<br>
-      4. Запустите бота
+    ${showResources ? `
+    <div class="success-actions">
+      <p class="success-actions-title">Что дальше:</p>
+      <a href="downloads/SK_SAMURAI_ALGO.algo" download class="modal-link primary">Скачать бота (.algo)</a>
+      <a href="instruction.html" target="_blank" rel="noopener" class="modal-link">Инструкция по подключению</a>
+      <a href="https://t.me/+Bk1ywSi8NVBjMzBi" target="_blank" rel="noopener" class="modal-link">Закрытый чат в Telegram</a>
+    </div>
+    ` : `
+    <p class="form-note">
+      Вставьте новый ключ в поле <strong>License Key</strong> в параметрах бота и перезапустите его.
     </p>
+    `}
 
     ${extraNote ? `<p class="form-note">${extraNote}</p>` : ""}
-
-    <p class="form-note">
-      Файл бота .algo и подробную инструкцию пришлет менеджер:
-      <a href="https://t.me/manager_sk_ua" target="_blank" rel="noopener">@manager_sk_ua</a>
-    </p>
   `);
 
   document.querySelector("#copyKeyBtn").addEventListener("click", () => {
@@ -174,7 +174,7 @@ async function verifyOwnBrokerPayment() {
       return;
     }
 
-    licenseSuccessModal("Оплата подтверждена", data, "");
+    licenseSuccessModal("Оплата подтверждена", data, "", true);
   } catch (error) {
     button.disabled = false;
     button.textContent = "Проверить оплату";
@@ -246,7 +246,8 @@ async function verifyRenewalPayment() {
     licenseSuccessModal(
       "Лицензия продлена",
       data,
-      "Если вы запускаете бота на телефоне или в облаке cTrader — замените ключ в параметрах бота на новый (выше). На компьютере прежний ключ продолжит работать автоматически."
+      "Если вы запускаете бота на телефоне или в облаке cTrader — замените ключ в параметрах бота на новый (выше). На компьютере прежний ключ продолжит работать автоматически.",
+      false
     );
   } catch (error) {
     button.disabled = false;

@@ -812,3 +812,43 @@ main {
 .renew-link:hover {
   text-decoration: underline;
 }
+
+/* --- Кнопки на экране успешной оплаты --- */
+.success-actions {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.success-actions-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.modal-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 10px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(65, 255, 136, 0.5);
+  background: rgba(65, 255, 136, 0.08);
+  color: #41ff88;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.modal-link:hover {
+  background: rgba(65, 255, 136, 0.16);
+}
+
+.modal-link.primary {
+  border: 0;
+  background: linear-gradient(135deg, #41ff88, #00c96f);
+  color: #001507;
+  font-weight: 800;
+}
