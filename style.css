@@ -852,3 +852,40 @@ main {
   color: #001507;
   font-weight: 800;
 }
+
+/* --- Баннер совместимости (страница тарифов) --- */
+.compat-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 36px;
+  max-width: 520px;
+  padding: 16px 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(65, 255, 136, 0.45);
+  background: rgba(65, 255, 136, 0.10);
+  color: #41ff88;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.compat-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+@media (max-width: 520px) {
+  .compat-notice {
+    font-size: 15px;
+    padding: 14px 16px;
+    gap: 8px;
+  }
+}
+
+.compat-notice .brand-ct {
+  text-transform: none;
+}
