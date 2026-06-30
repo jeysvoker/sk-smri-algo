@@ -806,7 +806,7 @@ main {
   color: #41ff88;
   font-size: 14px;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .renew-link:hover {
@@ -888,4 +888,17 @@ main {
 
 .compat-notice .brand-ct {
   text-transform: none;
+}
+
+.ctrader-logo {
+  height: 28px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 520px) {
+  .ctrader-logo {
+    height: 22px;
+  }
 }
