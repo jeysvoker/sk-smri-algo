@@ -334,7 +334,7 @@ async function sendReferralRequest() {
         Напишите менеджеру, чтобы он проверил подключение и активировал доступ.
       </p>
 
-      <a class="support-link" href="https://t.me/manager_sk_ua" target="_blank">
+      <a class="support-link" href="https://t.me/sk_kaizen" target="_blank">
         Написать менеджеру
       </a>
     `);
