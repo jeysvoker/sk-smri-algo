@@ -894,9 +894,12 @@ main {
 
 @media (max-width: 520px) {
   .compat-notice {
-    font-size: 15px;
-    padding: 14px 16px;
-    gap: 8px;
+    font-size: 12px;
+    padding: 12px 14px;
+    gap: 6px;
+    letter-spacing: 0.02em;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 }
 
@@ -913,6 +916,6 @@ main {
 
 @media (max-width: 520px) {
   .ctrader-logo {
-    height: 42px;
+    height: 34px;
   }
 }
