@@ -813,6 +813,20 @@ main {
   text-decoration: underline;
 }
 
+/* --- Предупреждение на экране успешной оплаты --- */
+.success-warning {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 176, 32, 0.45);
+  background: rgba(255, 176, 32, 0.10);
+  color: #ffb020;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
 /* --- Кнопки на экране успешной оплаты --- */
 .success-actions {
   margin-top: 20px;
@@ -891,7 +905,7 @@ main {
 }
 
 .ctrader-logo {
-  height: 28px;
+  height: 40px;
   width: auto;
   display: inline-block;
   vertical-align: middle;
@@ -899,6 +913,6 @@ main {
 
 @media (max-width: 520px) {
   .ctrader-logo {
-    height: 22px;
+    height: 32px;
   }
 }

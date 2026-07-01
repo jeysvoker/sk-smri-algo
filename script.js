@@ -60,7 +60,6 @@ function ownBrokerForm() {
     <input class="form-input" id="ownEmail" placeholder="Email" />
     <input class="form-input" id="ownTelegram" placeholder="Telegram username *" />
     <input class="form-input" id="ownAccount" placeholder="Номер торгового счета cTrader *" />
-    <input class="form-input" id="ownAccount2" placeholder="Второй счет (prop firm) — необязательно" />
     <input class="form-input" id="ownTxid" placeholder="TXID транзакции *" />
 
     <button class="modal-ok" id="verifyPaymentBtn">
@@ -68,7 +67,7 @@ function ownBrokerForm() {
     </button>
 
     <p class="form-note">
-      Лицензия работает максимум на 2 торговых счетах.
+      Лицензия работает на 1 торговом счете.
       Номер счета указан в cTrader рядом с названием брокера.
     </p>
   `);
@@ -111,8 +110,11 @@ function licenseSuccessModal(title, data, extraNote, showResources) {
     </button>
 
     ${showResources ? `
+    <div class="success-warning">
+      ⚠️ Не закрывайте это окно, пока не скопируете ключ, не скачаете бота и не перейдёте в закрытый чат — повторно ключ показан не будет.
+    </div>
     <div class="success-actions">
-      <p class="success-actions-title">Что дальше:</p>
+      <p class="success-actions-title">Следующие шаги:</p>
       <a href="downloads/SK_SAMURAI_ALGO.algo" download class="modal-link primary">Скачать бота (.algo)</a>
       <a href="instruction.html" target="_blank" rel="noopener" class="modal-link">Инструкция по подключению</a>
       <a href="https://t.me/+Bk1ywSi8NVBjMzBi" target="_blank" rel="noopener" class="modal-link">Закрытый чат в Telegram</a>
@@ -136,7 +138,6 @@ async function verifyOwnBrokerPayment() {
   const email = document.querySelector("#ownEmail").value.trim();
   const telegram = document.querySelector("#ownTelegram").value.trim();
   const accountNumber = document.querySelector("#ownAccount").value.trim();
-  const accountNumber2 = document.querySelector("#ownAccount2").value.trim();
   const txid = document.querySelector("#ownTxid").value.trim();
 
   if (!telegram || !txid || !accountNumber) {
@@ -159,8 +160,7 @@ async function verifyOwnBrokerPayment() {
         telegram,
         txid,
         plan: "own-broker",
-        account_number: accountNumber,
-        account_number_2: accountNumber2
+        account_number: accountNumber
       })
     });
 
