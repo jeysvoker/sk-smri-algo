@@ -196,7 +196,7 @@ function renewalForm() {
       <strong>${PAYMENT_WALLET}</strong>
     </div>
 
-    <input class="form-input" id="renewKey" placeholder="License Key / Ключ лицензии *" />
+    <input class="form-input" id="renewKey" placeholder="Ваш License Key / Ключ лицензии *" />
     <input class="form-input" id="renewTxid" placeholder="TXID транзакции *" />
 
     <button class="modal-ok" id="renewBtn">
