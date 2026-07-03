@@ -589,6 +589,11 @@ body::before {
     padding: 14px 16px;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.04);
+    color: #ffffff;
+  }
+
+  .nav a.current {
+    color: #41ff88;
   }
 
   .hero {
@@ -608,6 +613,12 @@ body::before {
     font-size: 17px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .fit-line {
+    display: inline-block;
+    font-size: 14.5px;
+    white-space: nowrap;
   }
 
   .hero-buttons {
@@ -654,6 +665,12 @@ body::before {
 
   .hero p {
     font-size: 16px;
+  }
+
+  .fit-line {
+    display: inline-block;
+    font-size: 13.5px;
+    white-space: nowrap;
   }
 
   .btn,
