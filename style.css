@@ -260,7 +260,8 @@ body::before {
 .plan-card,
 .step-card,
 .faq-item,
-.support-box {
+.support-box,
+.instr-step {
   background: rgba(0, 0, 0, 0.58);
   border: 1px solid rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(14px);
@@ -933,5 +934,69 @@ main {
 @media (max-width: 520px) {
   .ctrader-logo {
     height: 34px;
+  }
+}
+
+/* --- Инструкция: шаги со скриншотами (страница instruction.html) --- */
+.instr-steps {
+  display: grid;
+  gap: 22px;
+  max-width: 980px;
+}
+
+.instr-step {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 26px;
+  align-items: center;
+}
+
+.instr-step-text span {
+  display: block;
+  color: #41ff88;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.instr-step-text h3 {
+  margin-bottom: 10px;
+}
+
+.instr-step-text p {
+  color: rgba(255, 255, 255, 0.70);
+  line-height: 1.65;
+}
+
+.instr-step-text p + p {
+  margin-top: 14px;
+}
+
+.instr-shot {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.instr-done {
+  max-width: 980px;
+  margin-top: 26px;
+  color: #7dffab;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+@media (max-width: 860px) {
+  .instr-step {
+    grid-template-columns: 1fr;
+  }
+
+  .instr-shot {
+    order: -1;
   }
 }
