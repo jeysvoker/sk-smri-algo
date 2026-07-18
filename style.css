@@ -20,10 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Десктоп: фото на body скролиться разом зі сторінкою (цей шар вимкнений).
-   Мобільний (в media-query нижче): фото стоїть нерухомо через цей фіксований шар.
-   Висота прибита до 100lvh, щоб фото НЕ перемасштабовувалось (не "зумилось")
-   коли при скролі ховається/з'являється панель браузера. */
 body::before {
   content: "";
   position: fixed;
@@ -549,7 +545,6 @@ body::before {
 }
 
 @media (max-width: 950px) {
-  /* Мобільний: фото нерухоме (фіксований шар), без зуму при скролі */
   body {
     background-image: none;
   }
@@ -991,7 +986,7 @@ main {
   line-height: 1.6;
 }
 
-.instr-warning {
+.instr-step-text p.instr-warning {
   color: #ff4d4d;
   font-weight: 700;
 }
