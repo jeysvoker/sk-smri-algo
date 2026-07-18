@@ -991,6 +991,11 @@ main {
   line-height: 1.6;
 }
 
+.instr-warning {
+  color: #ff4d4d;
+  font-weight: 700;
+}
+
 @media (max-width: 860px) {
   .instr-step {
     grid-template-columns: 1fr;
